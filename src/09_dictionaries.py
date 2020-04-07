@@ -42,6 +42,14 @@ waypoints = [
 # waypoints list.
 
 # YOUR CODE HERE
-
+for i in waypoints :
+    x = i.get('name')
+    y = i.get('lon')
+    if x == 'a place':
+        i['name'] = 'not a real place'
+        i['lon'] = -130
+        
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
+for i in waypoints :
+    print(i.values())
